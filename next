@@ -1,0 +1,22 @@
+local DFrame = vgui.Create("DFrame")
+DFrame:SetPos(100, 100)
+DFrame:SetSize(500, 400)
+DFrame:SetTitle("Setup Wizard - Install")
+DFrame:SetIcon("icon16/computer_add.png")
+DFrame:MakePopup()
+
+local DLabel = vgui.Create( "DLabel", DFrame )
+DLabel:SetPos( 100, 150 )
+DLabel:SetText( "Install..." )
+
+local DProgress = vgui.Create( "DProgress",DFrame )
+DProgress:SetPos( 100, 170 )
+DProgress:SetSize( 350, 20 )
+DProgress:SetFraction( 0.75 )
+
+
+local DermaButton = vgui.Create( "DButton", DFrame )
+DermaButton:SetText( "Quit" )
+DermaButton:SetPos( 400, 370 )
+DermaButton:SetSize( 75, 20 )
+
